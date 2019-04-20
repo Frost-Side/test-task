@@ -1,0 +1,243 @@
+@import "colorScheme";
+
+@media (min-width: 768px) {
+  .header {
+    &__top-block {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .information-block {
+    margin: -5px 0 0;
+  }
+  .about-event {
+
+    &__main-block {
+      display: flex;
+      margin-top: 40px;
+    }
+  }
+  .left-block-col-6 {
+    width: 50%;
+    &__container {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-left: 59px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .right-block-col-6 {
+    width: 50%;
+    margin: 0;
+  }
+  .when-what-block {
+    &__container {
+    }
+  }
+  .date-block {
+    display: flex;
+    justify-content: unset;
+  }
+  .text-block {
+    display: flex;
+    justify-content: unset;
+  }
+  .heading-block {
+    margin-top: 43px;
+    align-self: unset;
+  }
+  .video-block {
+    margin-top: 29px;
+    margin-left: -59px;
+  }
+  .advantages {
+    &__box {
+      &--p0 {
+        padding: 0;
+      }
+    }
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 282px 273px 273px 273px 180px;
+    grid-template-areas: "heading right-violet20" "item1 item2" "item3 item4" "item5 item6" "submit submit-right-void-white";
+  }
+
+  .heading { grid-area: heading; }
+
+  .item1 { grid-area: item1; }
+
+  .item2 { grid-area: item2; }
+
+  .item3 { grid-area: item3; }
+
+  .right-violet20 {
+    grid-area: right-violet20;
+    display: block;
+  }
+
+  .item4 { grid-area: item4; }
+
+  .item5 { grid-area: item5; }
+
+  .item6 { grid-area: item6; }
+
+  .submit { grid-area: submit; }
+
+  .submit-right-void-white {
+    grid-area: submit-right-void-white;
+    display: block;
+  }
+
+  .right-void-white {
+    display: none;
+  }
+
+  .left-violet20 {
+    display: none;
+  }
+
+  .right-big-void-white {
+    display: none;
+  }
+
+  .left-void-white {
+    display: none;
+  }
+
+  @media (-ms-high-contrast:none) {
+    .grid-container {
+      display: -ms-grid;
+      -ms-grid-columns: 1fr 1fr;
+      -ms-grid-rows: 282px 273px 273px 273px 180px;
+    }
+
+    .heading {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 1;
+      -ms-grid-col-span: 1;
+    }
+
+    .item1 {
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 1;
+      -ms-grid-col-span: 1;
+    }
+
+    .item2 {
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 2;
+      -ms-grid-col-span: 1;
+    }
+
+    .item3 {
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 1;
+      -ms-grid-col-span: 1;
+    }
+
+    .right-violet20 {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 2;
+      -ms-grid-col-span: 1;
+      display: block;
+    }
+
+    .item4 {
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 2;
+      -ms-grid-col-span: 1;
+    }
+
+    .item5 {
+      -ms-grid-row: 4;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 1;
+      -ms-grid-col-span: 1;
+    }
+
+    .item6 {
+      -ms-grid-row: 4;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 2;
+      -ms-grid-col-span: 1;
+    }
+
+    .submit {
+      -ms-grid-row: 5;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 1;
+      -ms-grid-col-span: 1;
+    }
+
+    .submit-right-void-white {
+      -ms-grid-row: 5;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 2;
+      -ms-grid-col-span: 1;
+      display: block;
+    }
+
+    .right-void-white {
+      display: none;
+    }
+
+    .left-violet20 {
+      display: none;
+    }
+
+    .right-big-void-white {
+      display: none;
+    }
+
+    .left-void-white {
+      display: none;
+    }
+  }
+  .about-lecture {
+    &__container {
+      padding: 68px 50px 0;
+    }
+    &__round-border-block {
+      width: 125px;
+      height: 125px;
+      margin-right: 45px;
+    }
+    &__text {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+  .intensive {
+    &__content-container {
+      padding: 57px 37px 0;
+    }
+    &__more-info-block {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    &__buying-text {
+      max-width: 340px;
+      margin-left: 51px;
+      &--bold {
+        margin-left: 0;
+      }
+    }
+  }
+  .dates-block {
+    flex-direction: row;
+    height: auto;
+    &__item {
+      width: 33%;
+    }
+  }
+}

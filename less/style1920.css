@@ -1,0 +1,20 @@
+.intensiveSectionGradient {
+  background: -moz-linear-gradient(left, rgba(44, 76, 101, 0.1) 0%, #f3ebf5 50%, #f3ebf5 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(44, 76, 101, 0.1) 0%, #f3ebf5 50%, #f3ebf5 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(44, 76, 101, 0.1) 0%, #f3ebf5 50%, #f3ebf5 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a2c4c65', endColorstr='#f3ebf5', GradientType=1);
+  /* IE6-9 */
+}
+@media (min-width: 1920px) {
+  .wrapper {
+    width: 1920px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 0 5px 5px rgba(234, 223, 238, 0.25);
+    -moz-box-shadow: 0 0 5px 5px rgba(234, 223, 238, 0.25);
+    box-shadow: 0 0 5px 5px rgba(234, 223, 238, 0.25);
+  }
+}
+/*# sourceMappingURL=style1920.css.map */

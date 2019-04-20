@@ -1,0 +1,230 @@
+@import "colorScheme";
+
+@media (min-width: 1024px) {
+  .white-opacity-bg {
+    background-color: transparent;
+  }
+  .header {
+    &__container {
+      padding: 40px 12px 0 59px;
+    }
+  }
+  .main-heading {
+    font-size: 109px;
+    line-height: 94px;
+    margin-left: -6px;
+  }
+  .main-subheading {
+    font-size: 44px;
+    margin-left: -3px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 324px 324px 324px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 144px;
+    grid-template-areas: "left-violet20 heading heading right-violet20 right-void-white" "left-violet20 item1 item2 item3 right-big-void-white" "left-void-white item4 item5 item6 right-big-void-white" "left-void-white submit submit submit-right-void-white right-big-void-white";
+  }
+
+  .heading { grid-area: heading; }
+
+  .right-violet20 { grid-area: right-violet20; }
+
+  .item1 { grid-area: item1; }
+
+  .item2 { grid-area: item2; }
+
+  .item3 { grid-area: item3; }
+
+  .item4 { grid-area: item4; }
+
+  .item5 { grid-area: item5; }
+
+  .item6 { grid-area: item6; }
+
+  .right-big-void-white {
+    grid-area: right-big-void-white;
+    display: block;
+  }
+
+  .right-void-white {
+     grid-area: right-void-white;
+     display: block;
+   }
+
+  .left-void-white {
+    grid-area: left-void-white;
+    display: block;
+  }
+
+  .left-violet20 {
+    grid-area: left-violet20;
+    display: block;
+  }
+
+  .submit-right-void-white { grid-area: submit-right-void-white; }
+
+  .submit { grid-area: submit; }
+
+  @media (-ms-high-contrast:none) {
+    .grid-container {
+      display: -ms-grid;
+      -ms-grid-columns: 1fr 324px 324px 324px 1fr;
+      -ms-grid-rows: 1fr 1fr 1fr 144px;
+    }
+
+    .left-violet20 {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 2;
+      -ms-grid-col: 1;
+      -ms-grid-col-span: 1;
+      display: block;
+    }
+
+    .heading {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 2;
+      -ms-grid-col-span: 2;
+    }
+
+    .right-violet20 {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 4;
+      -ms-grid-col-span: 1;
+    }
+
+    .right-void-white {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 5;
+      -ms-grid-col-span: 1;
+      display: block;
+    }
+
+    .item1 {
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 2;
+      -ms-grid-col-span: 1;
+    }
+
+    .item2 {
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 3;
+      -ms-grid-col-span: 1;
+    }
+
+    .item3 {
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 4;
+      -ms-grid-col-span: 1;
+    }
+
+    .item4 {
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 2;
+      -ms-grid-col-span: 1;
+    }
+
+    .item5 {
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 3;
+      -ms-grid-col-span: 1;
+    }
+
+    .item6 {
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 4;
+      -ms-grid-col-span: 1;
+    }
+
+    .right-big-void-white {
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 3;
+      -ms-grid-col: 5;
+      -ms-grid-col-span: 1;
+      display: block;
+    }
+
+    .submit-right-void-white {
+      -ms-grid-row: 4;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 4;
+      -ms-grid-col-span: 1;
+    }
+
+    .submit {
+      -ms-grid-row: 4;
+      -ms-grid-row-span: 1;
+      -ms-grid-col: 2;
+      -ms-grid-col-span: 2;
+    }
+
+    .left-void-white {
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 2;
+      -ms-grid-col: 1;
+      -ms-grid-col-span: 1;
+      display: block;
+    }
+  }
+  .advantages {
+    &__box {
+      padding: 40px 60px 40px 50px;
+      &--p0 {
+        padding: 0;
+      }
+      &--no-bd-l {
+        border-left: 0;
+      }
+      &--no-bd-r {
+        border-right: 0;
+      };
+    }
+    &__submit-box {
+      padding: 38px 0 0 62px;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    &__submit-text {
+      margin: 16px 0 0 38px;
+    }
+  }
+  .for-you {
+    &__container {
+
+    }
+    &--bg-left {
+      display: block;
+      background: url("../img/lectureBlock/lectionBackgroundImage.jpg") no-repeat center center;
+    }
+  }
+  .col6-block {
+    width: 50%;
+  }
+  .about-lecture {
+    &__container {
+      padding: 68px 0 0 50px;
+    }
+  }
+  .intensive {
+    .intensiveSectionGradient();
+    &__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+    }
+    &__content-container {
+      width: 100%;
+      max-width: 919px;
+      padding: 57px 0 0 37px;
+    }
+  }
+}
